@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <!--enter title, meta, css link here-->
+    <script>
+
+      function testResults(form) {
+        var username = form.username.value;
+
+        alert ("You registered: " + username + ", ");
+      }
+
+    </script>
+  </head>
+
+  <body>
+      <h1>Moggybook</h1>
+      <!--complete the form-->
+
+    <form>
+      <table border="0" cellspacing="5" cellpadding="5">
+        <tr>
+          <td> Username:</td>
+          <td>
+            <image type="textarea" name="username">
+          </td>
+        </tr>
+      <!-- use table row <tr> template beneath for the other form element-->
+        <tr>
+          <td> *** element label *** </td>
+          <td> *** element input *** </td>
+        </tr>
+      </table>
+      <input type="submit" name="Submit" onClick ="testresults(this.form)" />
+    </form>
+  </body>
+</html>
