@@ -1,7 +1,7 @@
-  $(function(){
+$(function(){
     //document ready
-    alert("document ready");
-  });
+//    alert("document ready");
+//
 
 
   $('#searchform').submit(function() {
@@ -11,12 +11,12 @@
     getResultsFromOMDB(searchterms);
     return false;
   });
-
+ });
 
 function getResultsFromOMDB(searchterms) {
   //call YouTube API using ajax
   //build url for the request
-  var url ="http://www.omdbapi.com/apikey=e0d9915c=" + searchterms;
+  var url ="http://www.omdbapi.com/?apikey=8dbb4272&s=" + searchterms;
   //use jquery json shortcut
   $.getJSON(url, function(jsondata) {
     //handle the results
