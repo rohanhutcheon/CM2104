@@ -31,15 +31,16 @@
        output += "</div>"
       }
 
-      app.post('/quotes', function (req, res) {
-        db.collection('quotes').save(req.body, function(err, result) {
-          if (err) throw err;
-          console.log('saved to database')
-          res.redirect('/')
-        })
-      })
-
-
      res.send(output);
+
+     app.post('/quotes', function (req, res) {
+       db.collection('quotes').save(req.body, function(err, result) {
+         if (err) throw err;
+         console.log('saved to database')
+         res.redirect('/')
+       })
+     })
+
+     
     });
   });
